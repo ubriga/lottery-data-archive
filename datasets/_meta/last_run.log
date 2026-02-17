@@ -1,0 +1,32 @@
+2026-02-17 14:04:35,270 INFO etl.run_ingest: Starting ingestion: games=['pais_lotto', 'pais_chance'], mode=incremental, data_repo=/home/runner/work/lottery-platform-backend/lottery-platform-backend/data-archive
+2026-02-17 14:04:35,270 INFO connector.pais_lotto: Fetching https://www.pais.co.il/lotto/archive.aspx (attempt 1/3)
+2026-02-17 14:05:06,109 WARNING connector.pais_lotto: Attempt 1 failed: HTTPSConnectionPool(host='www.pais.co.il', port=443): Max retries exceeded with url: /lotto/archive.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pais.co.il', port=443) at 0x7efe3575ea50>, 'Connection to www.pais.co.il timed out. (connect timeout=30)'))
+2026-02-17 14:05:07,110 INFO connector.pais_lotto: Fetching https://www.pais.co.il/lotto/archive.aspx (attempt 2/3)
+2026-02-17 14:05:37,782 WARNING connector.pais_lotto: Attempt 2 failed: HTTPSConnectionPool(host='www.pais.co.il', port=443): Max retries exceeded with url: /lotto/archive.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pais.co.il', port=443) at 0x7efe358747d0>, 'Connection to www.pais.co.il timed out. (connect timeout=30)'))
+2026-02-17 14:05:39,783 INFO connector.pais_lotto: Fetching https://www.pais.co.il/lotto/archive.aspx (attempt 3/3)
+2026-02-17 14:06:10,626 WARNING connector.pais_lotto: Attempt 3 failed: HTTPSConnectionPool(host='www.pais.co.il', port=443): Max retries exceeded with url: /lotto/archive.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pais.co.il', port=443) at 0x7efe358d7850>, 'Connection to www.pais.co.il timed out. (connect timeout=30)'))
+2026-02-17 14:06:10,626 ERROR connector.pais_lotto: Failed to fetch https://www.pais.co.il/lotto/archive.aspx after 3 attempts
+2026-02-17 14:06:10,626 ERROR etl.run_ingest: Failed ingest for pais_lotto: Failed to fetch https://www.pais.co.il/lotto/archive.aspx
+Traceback (most recent call last):
+  File "/home/runner/work/lottery-platform-backend/lottery-platform-backend/etl/run_ingest.py", line 195, in main
+    r = ingest_game(data_repo, gid)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lottery-platform-backend/lottery-platform-backend/etl/run_ingest.py", line 85, in ingest_game
+    raise RuntimeError(f"Failed to fetch {cfg['source_url']}")
+RuntimeError: Failed to fetch https://www.pais.co.il/lotto/archive.aspx
+2026-02-17 14:06:10,627 INFO connector.pais_chance: Fetching https://www.pais.co.il/chance/archive.aspx (attempt 1/3)
+2026-02-17 14:06:41,312 WARNING connector.pais_chance: Attempt 1 failed: HTTPSConnectionPool(host='www.pais.co.il', port=443): Max retries exceeded with url: /chance/archive.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pais.co.il', port=443) at 0x7efe358d6ad0>, 'Connection to www.pais.co.il timed out. (connect timeout=30)'))
+2026-02-17 14:06:42,312 INFO connector.pais_chance: Fetching https://www.pais.co.il/chance/archive.aspx (attempt 2/3)
+2026-02-17 14:07:12,936 WARNING connector.pais_chance: Attempt 2 failed: HTTPSConnectionPool(host='www.pais.co.il', port=443): Max retries exceeded with url: /chance/archive.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pais.co.il', port=443) at 0x7efe358dda10>, 'Connection to www.pais.co.il timed out. (connect timeout=30)'))
+2026-02-17 14:07:14,936 INFO connector.pais_chance: Fetching https://www.pais.co.il/chance/archive.aspx (attempt 3/3)
+2026-02-17 14:07:45,775 WARNING connector.pais_chance: Attempt 3 failed: HTTPSConnectionPool(host='www.pais.co.il', port=443): Max retries exceeded with url: /chance/archive.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pais.co.il', port=443) at 0x7efe358dfa90>, 'Connection to www.pais.co.il timed out. (connect timeout=30)'))
+2026-02-17 14:07:45,776 ERROR connector.pais_chance: Failed to fetch https://www.pais.co.il/chance/archive.aspx after 3 attempts
+2026-02-17 14:07:45,776 ERROR etl.run_ingest: Failed ingest for pais_chance: Failed to fetch https://www.pais.co.il/chance/archive.aspx
+Traceback (most recent call last):
+  File "/home/runner/work/lottery-platform-backend/lottery-platform-backend/etl/run_ingest.py", line 195, in main
+    r = ingest_game(data_repo, gid)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lottery-platform-backend/lottery-platform-backend/etl/run_ingest.py", line 85, in ingest_game
+    raise RuntimeError(f"Failed to fetch {cfg['source_url']}")
+RuntimeError: Failed to fetch https://www.pais.co.il/chance/archive.aspx
+2026-02-17 14:07:45,777 INFO etl.run_ingest: Ingestion complete
