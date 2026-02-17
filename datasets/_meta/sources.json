@@ -39,20 +39,20 @@
     "sportoto_winner": {
       "name": "ווינר - ספורטוטו",
       "official_url": "https://www.sportoto.co.il",
-      "archive_url": "https://www.telesport.co.il/toto.aspx",
-      "api_available": false,
-      "scraping_method": "html_parser",
-      "verification": "official_domain_only",
-      "notes": "מקור רשמי - טלספורט (ספק רשמי)"
+      "archive_url": null,
+      "api_available": null,
+      "scraping_method": null,
+      "verification": "pending",
+      "notes": "ממתין למקור ארכיון רשמי ונגיש לציבור (לא משתמשים במקורות צד-ג')"
     },
     "sportoto_toto": {
       "name": "טוטו - ספורטוטו",
       "official_url": "https://www.sportoto.co.il",
-      "archive_url": "https://www.telesport.co.il/toto.aspx",
-      "api_available": false,
-      "scraping_method": "html_parser",
-      "verification": "official_domain_only",
-      "notes": "מקור רשמי - טלספורט (ספק רשמי)"
+      "archive_url": null,
+      "api_available": null,
+      "scraping_method": null,
+      "verification": "pending",
+      "notes": "ממתין למקור ארכיון רשמי ונגיש לציבור (לא משתמשים במקורות צד-ג')"
     }
   },
   "verification_policy": {
