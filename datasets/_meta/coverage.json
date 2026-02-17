@@ -1,0 +1,65 @@
+{
+  "last_updated": "2026-02-17T15:09:00+02:00",
+  "games": {
+    "pais_lotto": {
+      "name": "לוטו",
+      "operator": "מפעל הפיס",
+      "first_draw_date": "1951-08-18",
+      "last_draw_date": null,
+      "total_draws": 0,
+      "coverage_status": "initial",
+      "missing_periods": [],
+      "data_files": []
+    },
+    "pais_chance": {
+      "name": "צ'אנס",
+      "operator": "מפעל הפיס",
+      "first_draw_date": "1993-01-01",
+      "last_draw_date": null,
+      "total_draws": 0,
+      "coverage_status": "initial",
+      "missing_periods": [],
+      "data_files": []
+    },
+    "pais_777": {
+      "name": "777",
+      "operator": "מפעל הפיס",
+      "first_draw_date": "1994-01-01",
+      "last_draw_date": null,
+      "total_draws": 0,
+      "coverage_status": "initial",
+      "missing_periods": [],
+      "data_files": []
+    },
+    "pais_123": {
+      "name": "123",
+      "operator": "מפעל הפיס",
+      "first_draw_date": "2000-01-01",
+      "last_draw_date": null,
+      "total_draws": 0,
+      "coverage_status": "initial",
+      "missing_periods": [],
+      "data_files": []
+    },
+    "sportoto_winner": {
+      "name": "ווינר",
+      "operator": "ספורטוטו",
+      "first_draw_date": "1986-01-01",
+      "last_draw_date": null,
+      "total_draws": 0,
+      "coverage_status": "initial",
+      "missing_periods": [],
+      "data_files": []
+    },
+    "sportoto_toto": {
+      "name": "טוטו",
+      "operator": "ספורטוטו",
+      "first_draw_date": "1976-01-01",
+      "last_draw_date": null,
+      "total_draws": 0,
+      "coverage_status": "initial",
+      "missing_periods": [],
+      "data_files": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "official_sources": {
+    "pais_lotto": {
+      "name": "לוטו - מפעל הפיס",
+      "official_url": "https://www.pais.co.il/lotto/archive.aspx",
+      "archive_url": "https://www.pais.co.il/lotto/archive.aspx",
+      "api_available": false,
+      "scraping_method": "html_parser",
+      "verification": "official_domain_only",
+      "notes": "מקור רשמי בלבד - ארכיון מפעל הפיס"
+    },
+    "pais_chance": {
+      "name": "צ'אנס - מפעל הפיס",
+      "official_url": "https://www.pais.co.il/chance/archive.aspx",
+      "archive_url": "https://www.pais.co.il/chance/archive.aspx",
+      "api_available": false,
+      "scraping_method": "html_parser",
+      "verification": "official_domain_only",
+      "notes": "מקור רשמי בלבד - ארכיון מפעל הפיס"
+    },
+    "pais_777": {
+      "name": "777 - מפעל הפיס",
+      "official_url": "https://www.pais.co.il/777/archive.aspx",
+      "archive_url": "https://www.pais.co.il/777/archive.aspx",
+      "api_available": false,
+      "scraping_method": "html_parser",
+      "verification": "official_domain_only",
+      "notes": "מקור רשמי בלבד - ארכיון מפעל הפיס"
+    },
+    "pais_123": {
+      "name": "123 - מפעל הפיס",
+      "official_url": "https://www.pais.co.il/123/archive.aspx",
+      "archive_url": "https://www.pais.co.il/123/archive.aspx",
+      "api_available": false,
+      "scraping_method": "html_parser",
+      "verification": "official_domain_only",
+      "notes": "מקור רשמי בלבד - ארכיון מפעל הפיס"
+    },
+    "sportoto_winner": {
+      "name": "ווינר - ספורטוטו",
+      "official_url": "https://www.sportoto.co.il",
+      "archive_url": "https://www.telesport.co.il/toto.aspx",
+      "api_available": false,
+      "scraping_method": "html_parser",
+      "verification": "official_domain_only",
+      "notes": "מקור רשמי - טלספורט (ספק רשמי)"
+    },
+    "sportoto_toto": {
+      "name": "טוטו - ספורטוטו",
+      "official_url": "https://www.sportoto.co.il",
+      "archive_url": "https://www.telesport.co.il/toto.aspx",
+      "api_available": false,
+      "scraping_method": "html_parser",
+      "verification": "official_domain_only",
+      "notes": "מקור רשמי - טלספורט (ספק רשמי)"
+    }
+  },
+  "verification_policy": {
+    "description": "המערכת משתמשת רק במקורות רשמיים מאומתים",
+    "rules": [
+      "כל נתון חייב להגיע ממקור רשמי בלבד",
+      "אימות URL - רק דומיינים רשמיים",
+      "checksum לכל הגרלה למניעת שינויים",
+      "לוג מלא של מקור כל שורת נתונים"
+    ]
+  }
+}
